@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_app_update"
+        android:icon="@android:mipmap/sym_def_app_icon"
+        android:title="应用更新" />
+    <item
+        android:id="@+id/menu_message"
+        android:icon="@android:mipmap/sym_def_app_icon"
+        android:title="消息中心" />
+    <item
+        android:id="@+id/menu_setting"
+        android:icon="@android:mipmap/sym_def_app_icon"
+        android:title="设置" />
+</menu>
