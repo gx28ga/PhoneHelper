@@ -44,7 +44,6 @@ public class RecommendFragment extends BaseFragment<RecommendPresenter> implemen
 
     @Override
     public void init() {
-        Log.d(TAG, "init: ");
         initRecycleView();
         Log.d(TAG, "init: " + mPresenter);
         mPresenter.requestDatas();
@@ -53,7 +52,7 @@ public class RecommendFragment extends BaseFragment<RecommendPresenter> implemen
 
     @Override
     public void setupActivityComponent(AppComponent appComponent) {
-        DaggerRecommendComponent.builder().recommendModule(new RecommendModule(this)).appComponent(appComponent).build().inject(this);
+        DaggerRecommendComponent.builder().appComponent(appComponent).recommendModule(new RecommendModule(this)).build().inject(this);
 
     }
 

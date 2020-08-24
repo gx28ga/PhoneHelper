@@ -29,11 +29,12 @@ public abstract class BaseFragment<T extends BasePresenter> extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mRootView = inflater.inflate(setLayoutResId(), container, false);
-        Unbinder mUnBinder = ButterKnife.bind(this, mRootView);
-        init();
+        mUnBinder = ButterKnife.bind(this, mRootView);
+
 
         return mRootView;
     }
+
 
     @Override
     public void onDestroyView() {
@@ -48,6 +49,7 @@ public abstract class BaseFragment<T extends BasePresenter> extends Fragment {
         super.onActivityCreated(savedInstanceState);
         mApplication = (AppApplication) getActivity().getApplication();
         setupActivityComponent(mApplication.getAppComponent());
+        init();
     }
 
     public abstract int setLayoutResId();
