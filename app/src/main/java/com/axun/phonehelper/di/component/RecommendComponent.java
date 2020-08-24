@@ -1,6 +1,6 @@
 package com.axun.phonehelper.di.component;
 
-import com.axun.phonehelper.di.FragmentScope;
+import com.axun.phonehelper.di.ano.FragmentScope;
 import com.axun.phonehelper.di.module.RecommendModule;
 import com.axun.phonehelper.ui.fragment.RecommendFragment;
 

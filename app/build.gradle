@@ -60,4 +60,9 @@ dependencies {
     implementation 'com.google.dagger:dagger-android-support:2.15' // if you use the support libraries
     annotationProcessor 'com.google.dagger:dagger-android-processor:2.15'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.15'
+
+    // ionicon
+
+    implementation "com.mikepenz:iconics-core:2.8.1@aar"
+    implementation 'com.mikepenz:ionicons-typeface:2.0.1.2@aar'
 }

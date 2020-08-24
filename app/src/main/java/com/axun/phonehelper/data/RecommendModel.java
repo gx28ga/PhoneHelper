@@ -1,9 +1,9 @@
 package com.axun.phonehelper.data;
 
+import com.axun.phonehelper.base.BaseModel;
 import com.axun.phonehelper.bean.AppInfo;
 import com.axun.phonehelper.bean.PageBean;
 import com.axun.phonehelper.data.http.ApiService;
-import com.axun.phonehelper.data.http.HttpManager;
 
 import retrofit2.Callback;
 
